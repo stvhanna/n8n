@@ -1,9 +1,9 @@
-import { IDataObject } from "n8n-workflow";
+import type { IDataObject } from 'n8n-workflow';
 
 export interface ITask {
 	name?: string;
 	content?: string;
-	assignees?: string[];
+	assignees?: string[] | IDataObject;
 	tags?: string[];
 	status?: string;
 	priority?: number;
